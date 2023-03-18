@@ -18,7 +18,8 @@
 
     <link rel="stylesheet" href="css/icomoon.css" />
 
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="./css/carousel.css">
 
     <link rel="stylesheet" href="css/flexslider.css" />
 
@@ -30,6 +31,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <script src="./js/app.js" defer></script>
+    <script src="./js/carousel.js" defer></script>
 </head>
 <body>
     <div id="navbar">
@@ -38,8 +40,8 @@
         </div>
         <ul>
             <li><a href="#about">About the farm</a></li>
-            <li><a href="#marq">Gallery</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact us</a></li>
             <li><a href="#">Follow us</a></li>
         </ul>
         <div class="span" id="menu-btn">
@@ -51,8 +53,8 @@
     <div class="mobilemenu hidden" id="mobile">
         <ul>
             <li><a href="#about">About the farm</a></li>
-            <li><a href="#marq">Gallery</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact us</a></li>
             <li><a href="#">Follow us</a></li>
         </ul>
     </div>
@@ -60,7 +62,7 @@
         <section id="colorlib-hero" class="js-fullheight" data-section="home">
             <div class="flexslider js-fullheight">
               <ul class="slides">
-                <li style="background-image: url(images/pig.jpeg)">
+                <li style="background-image: url(images/Search\ results\ for\ _Pigs_\ _\ Brooms\ And\ Candles.jfif)">
                   <div class="overlay"></div>
                   <div class="container-fluid">
                     <div class="row">
@@ -141,32 +143,222 @@
           </section>
 
           <section id="about">
-            <span class="num1" style="background-image: url(images/egg.jpeg)">
+            <span class="num1 animate-box" style="background-image: url(images/egg.jpeg)">
               <div>
                 <h2>About the Farm</h2>
                 <h5>Our story</h5>
                 <hr>
               </div>
             </span>
-            <span class="num2">
+            <span class="num2 animate-box">
               <div>
                 <h2>Reality Farm</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laudantium modi commodi, sequi odit voluptatum labore adipisci inventore eveniet dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, sunt!</p>
               </div>
               
             </span>
-            <span class="num3" style="background-image: url(images/Capture.PNG)">
+            <span class="num1 animate-box" style="background-image: url(images/Natural\ Hollow\ Wooden\ Egg\ Set\ of\ 6.jfif)">
               <div>
                 <h2>Talk to us</h2>
-                <a href="#">whatsapp</a>
+                <a href="https://wa.me/0548465830">whatsapp</a>
               </div>
             </span>
           </section>
-          <!-- <marquee behavior="smooth" direction="left" id="marq">
-            <img src="./images/cow.jfif" alt="">
-            <img src="./images/cc5b1558-0e38-475d-a77f-2a1ee10bf877.jfif" alt="">
-          </marquee> -->
+
+<section id="gallery">
+
+          <div class="row">
+            <div
+              class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+              style="margin-left: 10px;"
+              data-animate-effect="fadeInLeft"
+            >
+            <span class="heading-meta">View our products</span>
+            <h2 class="colorlib-heading animate-box">Gallery</h2>
+            </div>
+          </div>
+          <div class="bobo">
+            <div class="wrapper">
+                <img class="next" id="left" src="./images/back_50px.png" alt="">
+                <div class="carousel">
+                    <img src="./images/ckicken.jfif" alt="" draggable="false">
+                    <img src="./images/Capture.PNG" alt="" draggable="false">
+                    <img src="./images/egg.jpeg" alt="" draggable="false">
+                    <img src="./images/Fili-West Farms_ A Chicken and Egg Story — Compost and Cava (1).jfif" alt="" draggable="false">
+                    <img src="./images/pig.jpeg" alt="" draggable="false">
+                    <img src="./images/South Africa (Zululand).jfif" alt="" draggable="false">
+                    <img src="./images/WhatsApp Image 2023-03-12 at 23.04.37.jpeg" alt="" draggable="false">
+                    <img src="./images/WhatsApp Image 2023-03-12 at 23.07.24.jpeg" alt="" draggable="false">
+                    <img src="./images/WhatsApp Image 2023-03-12 at 23.07.24.jpeg" alt="" draggable="false">
+                </div>
+                <img class="next" id="right" src="./images/forward_32px.png" alt="">
+            </div>
+        </div>
+
+      </section>
+
+
+            <div
+            id="colorlib-counter"
+            class="colorlib-counters"
+            style="background-image: url(images/South\ Africa\ \(Zululand\).jfif)"
+            data-stellar-background-ratio="0.5"
+          >
+            <div class="overlay"></div>
+            <div class="colorlib-narrow-content">
+              <div class="row"></div>
+              <div class="row">
+                <div class="col-md-3 text-center animate-box">
+                  <span
+                    class="colorlib-counter js-counter"
+                    data-from="0"
+                    data-to="20"
+                    data-speed="5000"
+                    data-refresh-interval="50"
+                  ></span>
+                  <span class="colorlib-counter-label">Crates per day</span>
+                </div>
+                <div class="col-md-3 text-center animate-box">
+                  <span
+                    class="colorlib-counter js-counter"
+                    data-from="0"
+                    data-to="300"
+                    data-speed="5000"
+                    data-refresh-interval="50"
+                  ></span>
+                  <span class="colorlib-counter-label">Animals</span>
+                </div>
+                <div class="col-md-3 text-center animate-box">
+                  <span
+                    class="colorlib-counter js-counter"
+                    data-from="0"
+                    data-to="100"
+                    data-speed="5000"
+                    data-refresh-interval="50"
+                  ></span>
+                  <span class="colorlib-counter-label">Clients</span>
+                </div>
+                <div class="col-md-3 text-center animate-box">
+                  <span
+                    class="colorlib-counter js-counter"
+                    data-from="0"
+                    data-to="10"
+                    data-speed="5000"
+                    data-refresh-interval="50"
+                  ></span>
+                  <span class="colorlib-counter-label">Partners</span>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
+    <section class="colorlib-contact" data-section="contact" id="contact">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div
+                  class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <span class="heading-meta">Get in Touch</span>
+                  <h2 class="colorlib-heading">Contact</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <!-- <div
+                    class="colorlib-feature colorlib-feature-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="colorlib-icon">
+                      <i class="icon-globe-outline"></i>
+                    </div>
+                    <div class="colorlib-text">
+                      <p>
+                        <a href="#"
+                          ><span
+                            class="__cf_email__"
+                            data-cfemail="731a1d151c33171c1e121a1d5d101c1e"
+                            >[email&#160;protected]</span
+                          ></a
+                        >
+                      </p>
+                    </div>
+                  </div> -->
+                  <div
+                    class="colorlib-feature colorlib-feature-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="colorlib-icon">
+                      <i class="icon-map"></i>
+                    </div>
+                    <div class="colorlib-text">
+                      <p>Tamale, Ghana</p>
+                    </div>
+                  </div>
+                  <div
+                    class="colorlib-feature colorlib-feature-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="colorlib-icon">
+                      <i class="icon-phone"></i>
+                    </div>
+                    <div class="colorlib-text">
+                      <p><a href="tel://">+233 548 465 830</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7 col-md-push-1">
+                  <div class="row">
+                    <div
+                      class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box"
+                      data-animate-effect="fadeInRight"
+                    >
+                      <form action="#">
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Name"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Email"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Subject"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <textarea
+                            name=""
+                            id="message"
+                            cols="30"
+                            rows="7"
+                            class="form-control"
+                            placeholder="Message"
+                          ></textarea>
+                        </div>
+                        <div class="form-group">
+                          <input
+                            type="submit"
+                            class="btn btn-primary btn-send-message"
+                            value="Send Message"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
 
     <script

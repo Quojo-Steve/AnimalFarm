@@ -285,8 +285,8 @@ figure figcaption {
   justify-content: space-between;
 }
 #navbar .logo img{
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
 }
 #navbar ul{
   display: flex;

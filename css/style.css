@@ -1539,9 +1539,10 @@ body.offcanvas .colorlib-nav-toggle {
 
 .btn-load-more {
   width: 100%;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  background: dodgerblue;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
 #colorlib-counter {
@@ -1843,6 +1844,7 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .loading{
+  background: white;
   display: none;
   height: 32px;
   width: 32px;

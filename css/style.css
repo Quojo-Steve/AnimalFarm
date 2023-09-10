@@ -39,11 +39,16 @@ a:focus {
   color: #2fa499;
   outline: none;
   text-decoration: none !important;
+  cursor: pointer;
 }
 
 /* p {
   margin-bottom: 1.5em;
 } */
+
+.vpart{
+  display: none;
+}
 
 h1,
 h2,
@@ -1416,125 +1421,78 @@ body.offcanvas .colorlib-nav-toggle {
   margin-left: 0;
 }
 .work-menu span a {
-  color: #000;
+  color: #3f3e3e;
 }
 .work-menu span a.active {
   color: #2c98f0;
 }
 
-.project {
-  background: green;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  height: 300px;
+.project,
+.projects{
   width: 100%;
-  display: block;
+  height: 350px;
+  border: 2px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
   margin-bottom: 30px;
 }
-.project .desc {
+
+.project img,
+.projects video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+
+.project:hover img,
+.projects:hover video{
+  transform: scale(1.1);
+}
+
+.popup-image,
+.popup-video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.popup-image span,
+.popup-video span{
   position: absolute;
   top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #2c98f0;
-  opacity: 0;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-.project .desc .con {
-  padding: 20px;
-  display: block;
-  position: relative;
-  height: 300px;
-}
-.project .desc .con .icon {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-}
-.project .desc .con .icon span {
-  display: inline;
-  padding-right: 5px;
-}
-.project .desc .con .icon span a {
-  color: #333333;
-  padding: 5px;
-  background: rgba(255, 255, 255, 0.5);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
-}
-.project .desc .con .icon i {
-  font-size: 16px;
-  color: #333333;
-}
-.project .desc h3 {
-  font-family: "Quicksand", Arial, sans-serif;
-  font-size: 16px;
+  right: 10px;
+  font-size: 60px;
   font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, -webkit-transform 0.3s;
-  -o-transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  -webkit-transform: translate3d(0, -15px, 0);
-  transform: translate3d(0, -15px, 0);
-  margin-bottom: 15px;
+  color: white;
+  cursor: pointer;
+  z-index: 100;
 }
-.project .desc h3 a {
-  color: #fff;
+
+.popup-image img,
+.popup-video video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid white;
+  border-radius: 5px;
+  width: 750px;
+  object-fit: cover;
+  /* height: 500px; */
 }
-.project .desc span {
-  display: block;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 13px;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, -webkit-transform 0.3s;
-  -o-transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  -webkit-transform: translate3d(0, 15px, 0);
-  transform: translate3d(0, 15px, 0);
-}
-.project .desc span a {
-  color: #000;
-}
-@media screen and (max-width: 768px) {
-  .project .desc {
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.4);
+
+@media (max-width:768px){
+  .popup-image img,
+  .popup-video video{
+    width: 95%;
   }
-  .project .desc h3 {
-    font-style: 28px;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    color: #000;
-  }
-  .project .desc span {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-.project:hover .desc {
-  opacity: 1;
-}
-.project:hover .desc h3 {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-.project:hover .desc span {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
 }
 
 .btn-load-more {

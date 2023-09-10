@@ -15,7 +15,6 @@ loadmore.addEventListener('click', (e) => {
             loadmore.style.background = "dodgerblue"
             loadmore.style.color = "#1bd8d8"
             if (elementList[i]) {
-                console.log(elementList[i])
                 elementList[i].style.display = "block";
             }
         }, 3000)        

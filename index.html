@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="./js/app.js" defer></script>
     <script src="./js/carousel.js" defer></script>
+    <script src="./js/imagepopup.js" defer></script>
+    <script src="./js/videoload.js" defer></script>
   </head>
   <body>
     <div id="navbar1">
@@ -125,7 +127,7 @@
             </li>
             <li
               style="
-                background-image: url(images/Made\ me\ Smile_\ Goats\ in\ Norway\ -\ LotsaSmiles\ Photography.jfif);
+                background-image: url(images/Screenshot.png);
               "
             >
               <div class="overlay"></div>
@@ -225,133 +227,116 @@
           >
             <div class="col-md-12">
               <p class="work-menu">
-                <span><a href="#" class="active">Images</a></span>
+                <span><a class="active imgs">Images</a></span>
+                <span><a class="vids">Videos</a></span>
               </p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInLeft">
+
+          <!-- image part -->
+          <div class="ipart">
+          <div class="row image-gallery">
+            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInRight">
               <div
                 class="project"
-                style="background-image: url(images/cick.jpg)"
-              ></div>
+              ><img src="./images/cick.jpg" alt=""></div>
             </div>
             <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInRight">
               <div
                 class="project"
-                style="background-image: url(images/ckicken.jfif)"
-              ></div>
-            </div>
-            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInTop">
-              <div
-                class="project"
-                style="background-image: url(images/egg.jpeg)"
-              ></div>
-            </div>
-            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInBottom">
-              <div
-                class="project"
-                style="background-image: url(images/pig.jpeg)"
-              ></div>
-            </div>
-            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInLeft">
-              <div
-                class="project"
-                style="background-image: url(images/Screenshot.png)"
-              ></div>
-            </div>
-            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInLeft">
-              <div
-                class="project"
-                style="background-image: url(images/cick.jpg)"
-              ></div>
+              ><img src="./images/ckicken.jfif" alt=""></div>
             </div>
             <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInRight">
               <div
                 class="project"
-                style="background-image: url(images/ckicken.jfif)"
-              ></div>
-            </div>
-            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInTop">
-              <div
-                class="project"
-                style="background-image: url(images/egg.jpeg)"
-              ></div>
-            </div>
-            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInBottom">
-              <div
-                class="project"
-                style="background-image: url(images/pig.jpeg)"
-              ></div>
+              ><img src="./images/egg.jpeg" alt=""></div>
             </div>
             <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInLeft">
               <div
                 class="project"
-                style="background-image: url(images/Screenshot.png)"
-              ></div>
+              ><img src="./images/Fili-West Farms_ A Chicken and Egg Story — Compost and Cava (1).jfif" alt=""></div>
             </div>
             <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInRight">
               <div
                 class="project"
-                style="
-                  background-image: url(images/WhatsApp\ Image\ 2023-03-12\ at\ 23.04.35.jpeg);
-                "
-              ></div>
+              ><img src="./images/pig.jpeg" alt=""></div>
+            </div>
+            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInLeft">
+              <div
+                class="project"
+              ><img src="./images/Screenshot.png" alt=""></div>
             </div>
             <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInRight">
               <div
                 class="project"
-                style="background-image: url(images/ckicken.jfif)"
-              ></div>
-            </div>
-            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInTop">
-              <div
-                class="project"
-                style="background-image: url(images/egg.jpeg)"
-              ></div>
-            </div>
-            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInBottom">
-              <div
-                class="project"
-                style="background-image: url(images/pig.jpeg)"
-              ></div>
+              ><img src="./images/Search results for _Pigs_ _ Brooms And Candles.jfif" alt=""></div>
             </div>
             <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInLeft">
               <div
                 class="project"
-                style="background-image: url(images/Screenshot.png)"
-              ></div>
-            </div>
-            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInLeft">
-              <div
-                class="project"
-                style="background-image: url(images/Screenshot.png)"
-              ></div>
-            </div>
-            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInLeft">
-              <div
-                class="project"
-                style="background-image: url(images/Screenshot.png)"
-              ></div>
+              ><img src="./images/WhatsApp Image 2023-03-12 at 23.04.45.jpeg" alt=""></div>
             </div>
             <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInRight">
               <div
                 class="project"
-                style="
-                  background-image: url(images/WhatsApp\ Image\ 2023-03-12\ at\ 23.04.35.jpeg);
-                "
-              ></div>
+              ><img src="./images/Waiting for Easter.jfif" alt=""></div>
+            </div>
+            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInRight">
+              <div
+                class="project"
+              ><img src="./images/WhatsApp Image 2023-03-12 at 23.04.46.jpeg" alt=""></div>
+            </div>
+            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInRight">
+              <div
+                class="project"
+              ><img src="./images/WhatsApp Image 2023-03-12 at 23.04.47.jpeg" alt=""></div>
             </div>
           </div>
+
+          
+          <div class="popup-image">
+            <span>&times;</span>
+            <img src="./images/egg.jpeg" alt="">
+          </div>
+
           <div class="row">
             <div class="col-md-12 animate-box" style="display: flex; justify-content: center; align-items: center; width: 100%;">
               <p>
-                <a class="btn-load-more">See more <i class="icon-reload"></i>
+                <a class="btn-load-more" style="color: white;">See more <i class="icon-reload"></i>
                   <span class="loading"><span></span></span>
               </a>
               </p>
             </div>
           </div>
+        </div>
+          <!-- image ends -->
+          <!-- video starts -->
+        <div class="vpart">
+          <div class="row video-gallery">
+            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInRight">
+              <div
+                class="projects"
+              ><video src="./images/pig.mp4" muted></video></div>
+            </div>
+
+            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInRight">
+              <div
+                class="projects"
+              ><video src="./images/eggs.mp4" muted></video></div>
+            </div>
+            <div class="col-md-6 animate-box imagess" data-animate-effect="fadeInLeft">
+              <div
+                class="projects"
+              ><video src="./images/piglets.mp4" muted></video></div>
+            </div>
+          </div>
+
+          <div class="popup-video">
+            <span>&times;</span>
+            <video src="./images/pig.mp4" loop="true" autoplay muted controls></video>
+          </div>
+        </div>
+        <!-- video part ends -->
         </div>
       </section>
 

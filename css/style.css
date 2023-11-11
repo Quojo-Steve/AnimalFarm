@@ -557,7 +557,7 @@ figure figcaption {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px 30px;
+  padding: 10px 20px;
   height: fit-content;
   width: 350px;
 }
@@ -648,13 +648,13 @@ figure figcaption {
     font-size: 18px;
   }
   .num2 p{
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 800;
   }
 }
 .num2 p{
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 800;
 }
 @media screen and (max-width: 935px){
   .num3{
@@ -777,9 +777,9 @@ body.offcanvas .colorlib-nav-toggle {
 } */
 
 .heading-meta {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   display: block;
-  font-size: 10px;
+  font-size: 15px;
   text-transform: uppercase;
   color: #999999;
   font-weight: 500;
@@ -1425,6 +1425,7 @@ body.offcanvas .colorlib-nav-toggle {
 }
 .work-menu span a.active {
   color: #2c98f0;
+  font-size: larger;
 }
 
 .project,
@@ -1796,6 +1797,11 @@ body.offcanvas .colorlib-nav-toggle {
 .developer{
   font-size: 20px;
   text-align: center;
+  font-weight: 600;
+}
+.developer b{
+  color: #e6e6e6;
+  font-weight: 800;
 }
 .row .imagess:nth-child(4) ~ .imagess{
   display: none;

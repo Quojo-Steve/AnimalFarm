@@ -13,11 +13,11 @@ loadmore.addEventListener('click', (e) => {
         setTimeout(function () {
             e.target.classList.remove('show-loader');
             loadmore.style.background = "dodgerblue"
-            loadmore.style.color = "#1bd8d8"
+            loadmore.style.color = "white"
             if (elementList[i]) {
                 elementList[i].style.display = "block";
             }
-        }, 3000)        
+        }, 2000)        
     }
     currentItems += 4;
 
